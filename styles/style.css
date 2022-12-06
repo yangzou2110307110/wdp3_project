@@ -1,8 +1,9 @@
 :root{
     --main-blue: #0a3d62;
+    --main-navy-blue: #2a3242;
     --main-white: #fff;
     --main-orange: #ff8c00;
-    --main-grey: #636363;
+    --main-grey: #313742;
     --light-blue: #44c1e4;
 }
 
@@ -25,7 +26,6 @@ a{
 
 
 /* Navbar section */
-
 
 .navbar {
     background-color: var(--main-blue);
@@ -76,7 +76,7 @@ a{
 }
 
 #about article {
-    width: 80%;
+    width: 70%;
     margin: 0 auto 4rem auto;
 }
 
