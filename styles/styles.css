@@ -91,14 +91,13 @@ h2 {
 .navlist{
     display: flex;
     gap: 35px; 
-    margin-right: 3rem;
+    margin-right: 3rem;  
 }
 
 
 .navlist li{
     list-style: none;
     display: flex;
-    justify-content: left;
     align-items: center;
 }
 
