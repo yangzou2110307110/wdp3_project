@@ -7,7 +7,6 @@
 
     --keyword-back-color: #404256; 
     --nav-link-hover: #ff8c00; 
-    --link-hover-color: #ffaa43;
     --heading-color: #ffaa43; 
 }
 
@@ -59,7 +58,7 @@ a{
 }
 
 a:hover {
-    color: var(--link-hover-color);
+    color: var(--light-blue);
     text-decoration: underline;
 }
 
@@ -71,7 +70,6 @@ a:hover {
     }
 
     a:hover {
-        color: var(--link-hover-color);
         text-decoration: underline;
         transform: translateY(6px);
     }
@@ -84,8 +82,9 @@ h1, h2{
 }
 
 h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
+    font-weight: 700;
 }
 
 h2 {
@@ -134,6 +133,9 @@ h2 {
     font-size: 1.2rem;
 }
 
+.navlist a:hover{
+    color: var(--nav-link-hover);
+}
 
 
 
@@ -173,13 +175,20 @@ section article {
    list-style: "\27A4";
 }
 
-
 .unordered-list li {
    padding: 0.8rem; 
 }
 
 .unordered-list  li::marker {
     color: var(--heading-color); 
+}
+
+.container-type-values{
+    list-style: square;
+}
+
+.container-type-values li::marker{
+    font-size: 1.5rem;
 }
 
 
@@ -196,6 +205,22 @@ section article {
 }
 
 
+.code-example a:hover {
+    text-decoration: none;
+    color: var(--heading-color);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+
+    .code-example {
+        transition: transform 0.3s ease-out;
+    }
+
+    .code-example:hover {
+        transform: translateX(4px);
+    }
+    
+}
 
 
 
