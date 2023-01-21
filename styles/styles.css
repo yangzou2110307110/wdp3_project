@@ -1,7 +1,7 @@
 :root{
     --main-blue: #0a3d62;
-    --main-navy-blue: #2a3242;
-    --main-white: #fff;
+    /* --main-navy-blue: #2a3242; */
+    --text-color: #fff;
     --main-grey: #313742;
     --light-blue: #44c1e4;
 
@@ -49,12 +49,12 @@ html {
 
 body {
     font-family: 'Arial', sans-serif;
-    color: var(--main-white);
+    color: var(--text-color);
 }
 
 a{
     text-decoration: none;
-    color: var(--main-white);
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -167,17 +167,18 @@ section article {
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-.container-type-values {
+.unordered-list {
    font-size: 1.2rem;
-   margin-left: 2rem; 
-  
+   margin-left: 2rem;
+   list-style: "\27A4";
 }
 
-.container-type-values li {
-  padding: 0.8rem; 
+
+.unordered-list li {
+   padding: 0.8rem; 
 }
 
-.container-type-values li::marker {
+.unordered-list  li::marker {
     color: var(--heading-color); 
 }
 
@@ -187,12 +188,30 @@ section article {
     background-color: var(--keyword-back-color);
 }
 
+.code-snippet {
+    background-color: var(--keyword-back-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.6rem;
+}
+
+
+
+
+
+/* source section */
+#sources {
+    padding: 4rem 0 6rem 0;
+    background: var(--main-grey);
+    text-align: center;
+}
+
 
 
 /* contact section */
 #contact {
     padding: 5rem 0;
-    background-color: var(--main-grey);
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     text-align: center;
 }
 

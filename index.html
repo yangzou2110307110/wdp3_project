@@ -17,7 +17,6 @@
     <nav class="navbar">
         <ul class="navlist">
             <li><a href="#summary">Summary</a></li>
-            <li><a href="#examples">Examples</a></li>
             <li><a href="#sources">Sources</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -48,7 +47,7 @@
                     But first, you have to tell the browser which element you want to use as a container.
                     You can do this by using the <span class="keyword">container-type</span> property. 
                     It can have the following values:  
-                    <ul class="container-type-values">
+                    <ul class="unordered-list">
                         <li><span class="keyword">inline-size</span> refers to the width of the container. The 
                             query will be based on its inline dimension.</li>
                         <li><span class="keyword">size</span> refers to the width and height of the container. The
@@ -59,7 +58,18 @@
                 </p>
 
                 <p>
-                    Look at the following example 
+                    Look at the following example: 
+                    <!-- TODO beautify and highlighting -->
+                    <pre class="code-snippet">
+                    <code class="html-language">
+    &lt;div class="container"&gt; 
+        &lt;div class="box&gt;
+            &lt;h2&gt;title&lt;/h2&gt;
+            &lt;p&gt;This is an example content&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                    </code>
+                    </pre>
                 </p>
 
             </article>
@@ -67,38 +77,32 @@
             <article>
                 <h2>Use Cases</h2>
                 <p>
-                        <!--TODO-->
+                    Container queries are useful for creating responsive layouts 
+                    that are more flexible and easier to maintain. 
+                    They can be used to create layouts that are responsive to the size of the container element. 
+                    This means that you can write CSS that targets a specific container element, rather than the entire viewport.
+                </p>
+                <p>
+                    The following are some examples of how to use container queries:
+                    <ul class="unordered-list">
+                        <li>Example 1: </li>
+                        <li>Example 2: </li>
+                    </ul>
                 </p>
             </article>
         
         </div>
     </section>
 
-    <!-- TODO
-    <section id="examples">
-        <div class="content-container">
-            <article>
-                <h2>Example1</h2>
-                <p></p>
-            </article>
-            <article>
-                <h2>Example2</h2>
-                <p></p>
-            </article>
-        </div>
-    </section>
-
-
+    
     <section id="sources">
         <div class="content-container">
-            <article>
-                <h2>Sources</h2>
-                <p></p>
-            </article>
+            <h2>External Resources</h2>
+            <p></p>
         </div>
     </section>
 
-    -->
+
     <section id="contact">
         <div class="content-container">
             <h2>Any Questions ?</h2>
@@ -108,13 +112,13 @@
                     <a href="https://github.com/yangzou2110307110">
                         <i class="fa-brands fa-square-github"></i>
                         Github 
-                    </a >&nbsp;&nbsp;&nbsp;&nbsp;
-                </li>
+                    </a >
+                </li>&nbsp;&nbsp;&nbsp;&nbsp;
                 <li class="contact-way cnt-email"> 
                     <a href="mailto:contact@example.com">
                         <i class="fa-sharp fa-solid fa-envelope"></i>
                         Email
-                    </a >&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a >
                 </li>
             </ul>
         </div>
