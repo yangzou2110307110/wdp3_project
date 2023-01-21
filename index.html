@@ -34,15 +34,28 @@
                 </p>
                 <p>
                     Container queries are currently supported by many browsers. 
-                    You can check if your browser supports container queries 
-                    <a href="https://caniuse.com/css-container-queries" target="_blank">here</a>.
+                    You can check if your browser supports container queries with
+                    <a href="https://caniuse.com/css-container-queries" target="_blank">
+                        CANIUSE
+                    </a>.
                 </p>
             </article>
     
             <article>
                 <h2>How to use Container Queries</h2>
                 <p>
-                    <!--TODO-->
+                    In order to use container queries, you need to use the <span class="keyword">@container</span> rule.
+                    First, you have to tell the browser which element you want to use as a container.
+                    You can do this by using the <span class="keyword">container-type</span> property. 
+                    It can be set to: 
+                    <ul class="container-type-values">
+                        <li><span class="keyword">inline-size</span> refers to the width of the container. The 
+                            query will be based on its inline dimension.</li>
+                        <li><span class="keyword">size</span> refers to the width and height of the container. The
+                            query will be based on its inline and block dimensions</li>
+                        <li><span class="keyword">normal</span> refers to a container that is not explicitly desginated 
+                           as a container for any dimensional queries on the block and inline dimensions</li>
+                    </ul>
                 </p>
             </article>
            
