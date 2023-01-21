@@ -5,6 +5,7 @@
     --main-grey: #313742;
     --light-blue: #44c1e4;
 
+    --keyword-back-color: #404256; 
     --nav-link-hover: #ff8c00; 
     --link-hover-color: #ffaa43;
     --heading-color: #ffaa43; 
@@ -176,6 +177,15 @@ section article {
   padding: 0.8rem; 
 }
 
+.container-type-values li::marker {
+    color: var(--heading-color); 
+}
+
+
+.keyword {
+    color: var(--light-blue); 
+    background-color: var(--keyword-back-color);
+}
 
 
 
@@ -201,7 +211,7 @@ section article {
 
 .contact-way a:hover {
     color: var(--light-blue);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
