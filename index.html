@@ -14,12 +14,15 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="navlist">
+    <nav class="navbar" >
+        <ul class="navlist" id="navi-list">
             <li><a href="#summary">Summary</a></li>
             <li><a href="#sources">Sources</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="menu-icon" id="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>    
 
     <section id="summary">
@@ -134,5 +137,20 @@
     </footer>
 
 </body>
+
+<script>
+    const toggleButton = document.getElementById("toggle-button");
+    const navList = document.getElementById("navi-list");
+
+    toggleButton.addEventListener("click", () => {
+        navList.classList.toggle("active-navlist");
+        if(navList.classList.contains("active-navlist")){
+            toggleButton.innerHTML = '<i class="fa-solid fa-times"></i>';
+        }else{
+            toggleButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }
+    });
+
+</script>
 
 </html>
