@@ -89,6 +89,10 @@ h2 {
     padding:30px 0; 
     display: flex;
     justify-content: flex-end; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 
@@ -218,7 +222,7 @@ section article {
 /* summary section */
 
 #summary {
-    padding-top: 5rem; 
+    padding-top: 10rem; 
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
@@ -280,9 +284,10 @@ section article {
 
 #sources {
     padding: 4rem 0 6rem 0;
-    background: var(--main-grey);
-   
+    background: var(--main-grey);  
 }
+
+
 
 
 

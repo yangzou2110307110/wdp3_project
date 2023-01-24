@@ -101,7 +101,14 @@
     <section id="sources">
         <div class="content-container">
             <h2>External Resources</h2>
-            <p></p>
+            <p>If you want know more about CSS this topic, check out these sites: </p>
+            <ul class="unordered-list">
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries" target="_blank">CSS Container Queries</a> - MDN</li>
+                <li><a href="https://mxb.dev/blog/container-queries-web-components/" target="_blank">Container Queries in Web Components</a> - Max Böck</li>
+                <li><a href="https://ishadeed.com/article/container-queries-are-finally-here/" target="_blank">CSS container queries are finally here</a> - Ahmad Shadeed</li>
+                <li><a href="https://www.sarasoueidan.com/blog/component-level-art-direction-with-container-queries-and-picture/" target="_blank">Component-level art direction with CSS Container Queries</a> - Sara Soueidan</li>
+                <li><a href="https://www.youtube.com/watch?v=3_-Je5XpbqY" target="_blank">Container Queries are going to change how we make layouts</a> - Kevin Powell</li>
+            </ul>
         </div>
     </section>
 
@@ -136,23 +143,29 @@
         </p>
     </footer>
 
+
+
+
+
+    <script>
+        const toggleButton = document.getElementById("toggle-button");
+        const navList = document.getElementById("navi-list");
+    
+        toggleButton.addEventListener("click", () => {
+            navList.classList.toggle("active-navlist");
+            if(navList.classList.contains("active-navlist")){
+                toggleButton.innerHTML = '<i class="fa-solid fa-times"></i>';
+                toggleButton.setAttribute("aria-label", "Hide Menu");
+            }else{
+                toggleButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                toggleButton.setAttribute("aria-label", "Show Menu");
+            }
+        });
+    
+    </script>
+
 </body>
 
-<script>
-    const toggleButton = document.getElementById("toggle-button");
-    const navList = document.getElementById("navi-list");
 
-    toggleButton.addEventListener("click", () => {
-        navList.classList.toggle("active-navlist");
-        if(navList.classList.contains("active-navlist")){
-            toggleButton.innerHTML = '<i class="fa-solid fa-times"></i>';
-            toggleButton.setAttribute("aria-label", "Hide Menu");
-        }else{
-            toggleButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
-            toggleButton.setAttribute("aria-label", "Show Menu");
-        }
-    });
-
-</script>
 
 </html>
