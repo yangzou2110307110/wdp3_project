@@ -20,7 +20,7 @@
             <li><a href="#sources">Sources</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="menu-icon" id="toggle-button">
+        <button class="menu-icon" id="toggle-button" aria-label="Show Menu">
             <i class="fa-solid fa-bars"></i>
         </button>
     </nav>    
@@ -146,8 +146,10 @@
         navList.classList.toggle("active-navlist");
         if(navList.classList.contains("active-navlist")){
             toggleButton.innerHTML = '<i class="fa-solid fa-times"></i>';
+            toggleButton.setAttribute("aria-label", "Hide Menu");
         }else{
             toggleButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            toggleButton.setAttribute("aria-label", "Show Menu");
         }
     });
 

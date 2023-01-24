@@ -26,19 +26,19 @@ html {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
     html {
         font-size: 85%;
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 540px) {
     html {
         font-size: 80%;
     }
 }
     
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 440px) {
     html {
         font-size: 75%;
     }
@@ -163,6 +163,9 @@ h2 {
 
     .navlist li a{
         font-size: 1.5rem;
+    }
+
+    .navlist li a:hover{
         text-decoration: none;
     }
 
@@ -206,7 +209,7 @@ section article {
 }
 
 .content-container {
-    width: clamp(250px, 70vw, 800px);
+    width: clamp(300px, 70vw, 800px);
     margin-left: auto;
     margin-right: auto;
 }
