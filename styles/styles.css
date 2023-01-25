@@ -256,12 +256,10 @@ section article {
 }
 
 .code-snippet {
-    background-color: var(--keyword-back-color);
     margin-bottom: 2.5rem;
     white-space: pre-wrap;
     border: 4px solid var(--text-color);
     border-radius: 8px;
-
 }   
 
 .html-language, .css-language{
