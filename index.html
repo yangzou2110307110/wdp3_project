@@ -55,7 +55,7 @@
                     But first, you have to tell the browser which element you want to use as a container.
                     You can do this by using the <span class="keyword">container-type</span> property. 
                     It can have the following values:  
-                    <ul class="unordered-list container-type-values">
+                    <ul class="unordered-list square-marker">
                         <li><span class="keyword">inline-size</span> indicates that the query will be based on its inline axis (width).</li> 
                         <li><span class="keyword">size</span> refers to the width and height of the container. The
                             query will be based on its inline and block dimensions.</li>
@@ -102,13 +102,32 @@
             </article>
            
             <article>
-                <h2>Use Cases</h2>
+                <h2>Key Takeaways and Use Cases</h2>
                 <p>
-                    Container queries are useful for creating responsive layouts 
+                    CSS Container queries are useful for creating responsive layouts 
                     that are more flexible and easier to maintain, especially when it comes to component-driven-design where you 
                     have a lot of components that need to be adapated to different screen sizes.
-                    They can be used to create layouts that are responsive to the size of the container element. 
-                    This means that you can write CSS that targets a specific container element, rather than the entire viewport.
+                    Container queries allow you to apply styles based on the size of the container element rather than the viewport size. 
+                    Some possible use cases for container queries include:
+                    <ul class="unordered-list square-marker">
+                        <li>
+                            <span class="keyword">Responsive design:</span> You can use container queries to change the layout or styling of elements based on the size of the container, rather than the size of the viewport. 
+                            This can be useful for creating flexible and adaptable designs that work well on a variety of screen sizes.
+                        </li>
+                        <li>
+                            <span class="keyword">Conditional loading:</span> You can use container queries to conditionally load or hide elements based on the size 
+                            of the container. For example, you could use a container query to only load a large background 
+                            image on a wide container, and a smaller version on a narrower container.
+                        </li>
+                        <li>
+                            <span class="keyword">Accessibility:</span> You can use container queries to create more accessible designs by adjusting font sizes, line heights, 
+                            and other typography-related styles based on the size of the container.
+                        </li>
+                        <li>
+                            <span class="keyword">Dynamic grid layout:</span> You can use container queries to change the layout of a grid of elements 
+                            based on the size of the container.
+                        </li>
+                    </ul>
                 </p>
                 <p>
                     The following are some examples of how to use container queries. Try it out !

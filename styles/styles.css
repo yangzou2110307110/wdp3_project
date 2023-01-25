@@ -2,8 +2,8 @@
     --navbar-color: #0a3d62;
     --text-color: #fff;
     --main-grey: #313742;
-    --light-blue: #44c1e4;
-
+    --keyword-color: #44c1e4;
+    --lang-title-color: #4fd986; 
     --keyword-back-color: #404256; 
     --nav-link-hover: #ff8c00; 
     --heading-color: #ffaa43; 
@@ -56,7 +56,7 @@ a{
 }
 
 a:hover {
-    color: var(--light-blue);
+    color: var(--keyword-color);
     text-decoration: underline;
 }
 
@@ -241,17 +241,17 @@ section article {
     color: var(--heading-color); 
 }
 
-.container-type-values{
+.square-marker{
     list-style: square;
 }
 
-.container-type-values li::marker{
+.square-marker li::marker{
     font-size: 1.5rem;
 }
 
 
 .keyword {
-    color: var(--light-blue); 
+    color: var(--keyword-color); 
     background-color: var(--keyword-back-color);
 }
 
@@ -268,6 +268,7 @@ section article {
     font-size: 1rem;
     margin-left: 10px; 
     font-weight: 700;
+    color: var(--lang-title-color); 
 }
 
 .html-language, .css-language{
@@ -278,7 +279,7 @@ section article {
 
 .li-link a:hover {
     text-decoration: underline;
-    color: var(--light-blue);
+    color: var(--keyword-color);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -326,7 +327,7 @@ section article {
 
 
 .contact-way a:hover {
-    color: var(--light-blue);
+    color: var(--keyword-color);
     text-decoration: none;
 }
 
