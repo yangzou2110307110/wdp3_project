@@ -11,6 +11,11 @@
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
           crossorigin="anonymous" 
           referrerpolicy="no-referrer" />
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/stackoverflow-dark.min.css" 
+          integrity="sha512-Xn1b0y/BrCD7usnEh6r9CcKxHXFVleVUjGDnfc95zDDwFUwtOz3lJC/XtJcuLRNyrMQJEEToFfwjC9Ue/aWY/g==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -61,9 +66,7 @@
 
                 <p>
                     Look at the following example which is a component consisting of a title, a paragraph and a button.  
-                    <pre class="code-snippet">
-                        <!-- TODO beautify and highlighting -->
-                    <code class="html-language">
+                    <pre class="code-snippet"><code class="html-language">
     &lt;div class="container"&gt; 
         &lt;div class="component"&gt;
             &lt;h2&gt;title&lt;/h2&gt;
@@ -71,17 +74,14 @@
             &lt;button&gt;Button&lt;/button&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-                    </code>
-                    </pre>
+                    </code></pre>
                 </p>
 
                 <p>
                     Now we want to make the component more responsive. We can do this by applying the <span class="keyword">container-type</span> property to the container element.
                     It is also good practice to give the containment context a name by using the <span class="keyword">container-name</span> property so that we can target it with 
                     the <span class="keyword">@container</span> rule specifically. The following CSS code example shows how to do this:
-                    <pre class="code-snippet">
-                        <!-- TODO beautify and highlighting -->
-                    <code class="css-language">
+                    <pre class="code-snippet"><code class="css-language">
     .container {
         contain: inline-size;
         container-name: my-container;
@@ -94,9 +94,7 @@
         .component {
             /* styles for small screens */
         } 
-    }
-                    </code>
-                    </pre>
+    }</code></pre>
                 </p>
 
             </article>
@@ -188,7 +186,9 @@
         });
     
     </script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    
+    <script>hljs.highlightAll();</script>
 </body>
 
 
