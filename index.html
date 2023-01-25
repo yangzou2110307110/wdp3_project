@@ -22,7 +22,7 @@
     <nav class="navbar" >
         <ul class="navlist" id="navi-list">
             <li><a href="#summary">Summary</a></li>
-            <li><a href="#sources">Sources</a></li>
+            <li><a href="#references">References</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="menu-icon" id="toggle-button" aria-label="Show Menu">
@@ -66,7 +66,8 @@
 
                 <p>
                     Look at the following example which is a component consisting of a title, a paragraph and a button.  
-                    <pre class="code-snippet"><code class="html-language">
+                    <pre class="code-snippet"><span class="language-title">HTML</span>
+    <code class="html-language">
     &lt;div class="container"&gt; 
         &lt;div class="component"&gt;
             &lt;h2&gt;title&lt;/h2&gt;
@@ -81,9 +82,10 @@
                     Now we want to make the component more responsive. We can do this by applying the <span class="keyword">container-type</span> property to the container element.
                     It is also good practice to give the containment context a name by using the <span class="keyword">container-name</span> property so that we can target it with 
                     the <span class="keyword">@container</span> rule specifically. The following CSS code example shows how to do this:
-                    <pre class="code-snippet"><code class="css-language">
+                    <pre class="code-snippet"><span class="language-title">CSS</span>
+    <code class="css-language">
     .container {
-        contain: inline-size;
+        container-type: inline-size;
         container-name: my-container;
         /* container: my-container/inline-size; 
         (This is the shorthand syntax.)  */
@@ -121,7 +123,7 @@
     </section>
 
     
-    <section id="sources">
+    <section id="references">
         <div class="content-container">
             <h2>External Resources</h2>
             <p>If you want know more about CSS this topic, check out these sites: </p>

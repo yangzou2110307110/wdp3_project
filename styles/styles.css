@@ -260,7 +260,15 @@ section article {
     white-space: pre-wrap;
     border: 4px solid var(--text-color);
     border-radius: 8px;
+    background-color: var(--keyword-back-color);
+    padding-top: 7px; 
 }   
+
+.language-title {
+    font-size: 1rem;
+    margin-left: 10px; 
+    font-weight: 700;
+}
 
 .html-language, .css-language{
     line-height: 2em; 
@@ -289,12 +297,10 @@ section article {
 
 /* source section */
 
-#sources {
+#references {
     padding: 6rem 0 6rem 0;
     background: var(--main-grey);  
 }
-
-
 
 
 
