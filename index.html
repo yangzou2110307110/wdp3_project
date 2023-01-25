@@ -51,26 +51,50 @@
                     You can do this by using the <span class="keyword">container-type</span> property. 
                     It can have the following values:  
                     <ul class="unordered-list container-type-values">
-                        <li><span class="keyword">inline-size</span> refers to the width of the container. The 
-                            query will be based on its inline dimension.</li>
+                        <li><span class="keyword">inline-size</span> indicates that the query will be based on its inline axis (width).</li> 
                         <li><span class="keyword">size</span> refers to the width and height of the container. The
-                            query will be based on its inline and block dimensions</li>
+                            query will be based on its inline and block dimensions.</li>
                         <li><span class="keyword">normal</span> refers to a container that is not explicitly desginated 
-                           as a container for any dimensional queries on the block and inline dimensions</li>
+                           as a container for any dimensional queries on the block and inline dimensions.</li>
                     </ul>
                 </p>
 
                 <p>
-                    Look at the following example: 
-                    <!-- TODO beautify and highlighting -->
+                    Look at the following example which is a component consisting of a title, a paragraph and a button.  
                     <pre class="code-snippet">
+                        <!-- TODO beautify and highlighting -->
                     <code class="html-language">
     &lt;div class="container"&gt; 
-        &lt;div class="box&gt;
+        &lt;div class="component"&gt;
             &lt;h2&gt;title&lt;/h2&gt;
             &lt;p&gt;This is an example content&lt;/p&gt;
+            &lt;button&gt;Button&lt;/button&gt;
         &lt;/div&gt;
     &lt;/div&gt;
+                    </code>
+                    </pre>
+                </p>
+
+                <p>
+                    Now we want to make the component more responsive. We can do this by applying the <span class="keyword">container-type</span> property to the container element.
+                    It is also good practice to give the containment context a name by using the <span class="keyword">container-name</span> property so that we can target it with 
+                    the <span class="keyword">@container</span> rule specifically. The following CSS code example shows how to do this:
+                    <pre class="code-snippet">
+                        <!-- TODO beautify and highlighting -->
+                    <code class="css-language">
+    .container {
+        contain: inline-size;
+        container-name: my-container;
+        /* container: my-container/inline-size; 
+        (This is the shorthand syntax.)  */
+    }
+
+    /* container query */
+    @container my-container (max-width: 600px) {
+        .component {
+            /* styles for small screens */
+        } 
+    }
                     </code>
                     </pre>
                 </p>
@@ -81,15 +105,16 @@
                 <h2>Use Cases</h2>
                 <p>
                     Container queries are useful for creating responsive layouts 
-                    that are more flexible and easier to maintain. 
+                    that are more flexible and easier to maintain, especially when it comes to component-driven-design where you 
+                    have a lot of components that need to be adapated to different screen sizes.
                     They can be used to create layouts that are responsive to the size of the container element. 
                     This means that you can write CSS that targets a specific container element, rather than the entire viewport.
                 </p>
                 <p>
                     The following are some examples of how to use container queries. Try it out !
                     <ul class="unordered-list">
-                        <li class="code-example"><a href="./Code Example 1/code1.html" target="_blank" >Example 1: Block Quotes</a></li>
-                        <li class="code-example"><a href="./Code Example 2/code2.html" target="_blank">Example 2: Flexible Layout with sidebar</a></li>
+                        <li class="li-link"><a href="./Code Example 1/code1.html" target="_blank" >Example 1: Block Quotes</a></li>
+                        <li class="li-link"><a href="./Code Example 2/code2.html" target="_blank">Example 2: Flexible Layout with sidebar</a></li>
                     </ul>
                 </p>
             </article>
@@ -103,11 +128,11 @@
             <h2>External Resources</h2>
             <p>If you want know more about CSS this topic, check out these sites: </p>
             <ul class="unordered-list">
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries" target="_blank">CSS Container Queries</a> - MDN</li>
-                <li><a href="https://mxb.dev/blog/container-queries-web-components/" target="_blank">Container Queries in Web Components</a> - Max Böck</li>
-                <li><a href="https://ishadeed.com/article/container-queries-are-finally-here/" target="_blank">CSS container queries are finally here</a> - Ahmad Shadeed</li>
-                <li><a href="https://www.sarasoueidan.com/blog/component-level-art-direction-with-container-queries-and-picture/" target="_blank">Component-level art direction with CSS Container Queries</a> - Sara Soueidan</li>
-                <li><a href="https://www.youtube.com/watch?v=3_-Je5XpbqY" target="_blank">Container Queries are going to change how we make layouts</a> - Kevin Powell</li>
+                <li class="li-link"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries" target="_blank">CSS Container Queries</a> - MDN</li>
+                <li class="li-link"><a href="https://mxb.dev/blog/container-queries-web-components/" target="_blank">Container Queries in Web Components</a> - Max Böck</li>
+                <li class="li-link"><a href="https://ishadeed.com/article/container-queries-are-finally-here/" target="_blank">CSS container queries are finally here</a> - Ahmad Shadeed</li>
+                <li class="li-link"><a href="https://www.sarasoueidan.com/blog/component-level-art-direction-with-container-queries-and-picture/" target="_blank">Component-level art direction with CSS Container Queries</a> - Sara Soueidan</li>
+                <li class="li-link"><a href="https://www.youtube.com/watch?v=3_-Je5XpbqY" target="_blank">Container Queries are going to change how we make layouts</a> - Kevin Powell</li>
             </ul>
         </div>
     </section>
