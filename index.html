@@ -98,7 +98,24 @@
         } 
     }</code></pre>
                 </p>
+                   
+                <p>
+                    Another very useful thing with CSS Container Queries is that you 
+                    can use <span class="keyword">container query units</span> and 
+                    they work just like <span class="keyword">viewport units</span>.
+                    You can use them to set the width and height of elements based on the size of the container
+                    which gives more flexibility to your design.
+                    The following shows the different container query units:
 
+                    <ul class="unordered-list square-marker">
+                        <li><span class="keyword">cqw:</span> 1% of the container's width</li> 
+                        <li><span class="keyword">cqh:</span> 1% of the container's height</li>
+                        <li><span class="keyword">cqi:</span> 1% of the container's inline dimension</li>
+                        <li><span class="keyword">cqb:</span> 1% of the container's block dimension</li>
+                        <li><span class="keyword">cqmin</span> smaller value of cqi or cqb</li>
+                        <li><span class="keyword">cqmax</span> larger value of cqi or cqb</li>
+                    </ul>
+                </p>
             </article>
            
             <article>
@@ -132,12 +149,29 @@
                 <p>
                     The following are some examples of how to use container queries. Try it out !
                     <ul class="unordered-list">
-                        <li class="li-link"><a href="./Code Example 1/code1.html" target="_blank" >Example 1: Block Quotes</a></li>
+                        <li class="li-link"><a href="./Code Example 1/code1.html" target="_blank">Example 1: Block Quotes</a></li>
                         <li class="li-link"><a href="./Code Example 2/code2.html" target="_blank">Example 2: Flexible Layout with sidebar</a></li>
                     </ul>
                 </p>
             </article>
         
+            <article>
+                <h2>Things to consider</h2>
+                <p>Note that if set your <span class="keyword">container-type</span> property to 
+                    <span class="keyword">size</span>, the width and height of the container will be defined by itsself. 
+                    The children elements are just inside the container and will not have any effect on the size of the container. 
+                    It might be lead to some overflow issues with the children elements especially if the width and height of the container
+                    are not explicitly defined or set automatically. So, think carefully when you want to use 
+                    container queries based on height and width.  <span class="keyword">inline-size</span> should be enough for most cases.
+                </p>
+                <p>
+                    There is also something to consider when you want to use container queries in combination with 
+                    <span class="keyword">flexbox</span>. The issue is that the size of flex items is determined by the size of their contents, 
+                    rather than the size of the container. In this case, we may also encounter some overflow issues. 
+                    There are many ways to solve this problem but the easiest way is to set the <span class="keyword">width</span> property of the flexbox
+                    container to <span class="keyword">100%</span> or set the <span class="keyword">flex-basis</span> property to <span class="keyword">100%</span>.
+                </p>
+            </article>
         </div>
     </section>
 

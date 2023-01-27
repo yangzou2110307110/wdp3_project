@@ -176,7 +176,7 @@ h2 {
     .menu-icon {
         display: block;
         position: absolute; 
-        top: 9px;
+        top: 8px;
         right: 8px;
     }
 
@@ -253,6 +253,7 @@ section article {
 .keyword {
     color: var(--keyword-color); 
     background-color: var(--keyword-back-color);
+    text-decoration: underline;
 }
 
 .code-snippet {
