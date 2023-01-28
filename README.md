@@ -40,10 +40,10 @@ Container Queries sind eine neue Funktion in CSS, die ein Gamechanger im Bereich
 
     **Ziel**: Verdeutlichung der Vorteile gegenüber Media Queries.
 
-5. Container Queries im Zusammenspiel mit Flexbox und Grid
+5. Mögliche Probleme
 
-    Aufzeigen von zu berücksichtigenden Aspekten bzw. möglichen Problemen, wenn Container
-    Queries gemeinsam mit Flexbox oder Grid verwendet werden.
+    Aufzeigen von zu berücksichtigenden Aspekten bzw. möglichen Problemen, z. B. wenn Container
+    Queries im Zusammenspiel mit Flexbox oder Grid verwendet werden.
 
     **Ziel**: Darstellung der Auswirkungen von Containern-Definitionen (z. B. auf die Breite von Flex-Kindelementen oder Collapsing Margins).
 
